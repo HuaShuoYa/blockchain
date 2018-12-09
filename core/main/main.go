@@ -1,7 +1,7 @@
 package main
 
 import (
-	"blockchin/core"
+	"blockchain/core"
 	"fmt"
 )
 
@@ -12,6 +12,7 @@ func main() {
 
 	for _, block := range bc.Blocks {
 		fmt.Printf("Prev. hash: %x\n", block.PreBlockHash)
+		//fmt.Printf("PoW: %s\n", strconv.FormatBool())
 		fmt.Printf("Data: %s\n", block.Data)
 		fmt.Printf("Hash: %x\n", block.Hash)
 		fmt.Println()
